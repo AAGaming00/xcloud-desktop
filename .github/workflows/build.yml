@@ -45,4 +45,4 @@ jobs:
         if: success()
         with:
           name: XCloud Desktop-${{ github.sha }}
-          path: out/**/*!(.zip)
+          path: out/*.*
