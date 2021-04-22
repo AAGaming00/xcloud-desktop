@@ -26,7 +26,8 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "XCloud"
+            "name": "XCloud",
+            "exe": "XCloud.exe"
           }
         },
         {
