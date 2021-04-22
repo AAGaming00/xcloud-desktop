@@ -31,13 +31,14 @@ jobs:
       - name: Build
         run: yarn make
 
-      - run: ls ./out
+      - name: List Output Files
+        run: ls ./out/make
 
       - name: Upload builds to release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ github.ref }}
-          files: out/*.*
+          files: out/make/*.*
           draft: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -47,4 +48,4 @@ jobs:
         if: success()
         with:
           name: XCloud Desktop-${{ github.sha }}
-          path: out/*.*
+          path: out/make/*.*
