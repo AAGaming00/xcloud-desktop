@@ -31,6 +31,8 @@ jobs:
       - name: Build
         run: yarn make
 
+      - run: ls ./out
+
       - name: Upload builds to release
         uses: softprops/action-gh-release@v1
         with:
