@@ -1,5 +1,5 @@
 {
-  "name": "xcloud-desktop",
+  "name": "xcloud",
   "productName": "XCloud",
   "version": "1.0.3",
   "description": "Desktop app for XCloud (Unoffical)",
@@ -20,7 +20,7 @@
   "config": {
     "forge": {
       "packagerConfig": {
-        "executableName": "xcloud-desktop"
+        "executableName": "xcloud"
       },
       "makers": [
         {
