@@ -5,6 +5,8 @@ on:
     types:
       - published
   push:
+    tags-ignore:
+      - '**'
   workflow_dispatch:
 
 jobs:
