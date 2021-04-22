@@ -37,7 +37,7 @@ jobs:
         
       - name: List Output Files
         if: success() && matrix.os == 'ubuntu-latest'
-        run: ls ./out/make/*/*/*/
+        run: ls ./out/make/*/*/
 
       - name: Upload builds to release
         if: success() && (matrix.os == 'windows-latest' || matrix.os == 'macos-latest')
