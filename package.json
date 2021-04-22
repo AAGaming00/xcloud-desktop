@@ -20,7 +20,7 @@
   "config": {
     "forge": {
       "packagerConfig": {
-        "executableName": "xcloud"
+        "executableName": "xcloud-desktop"
       },
       "makers": [
         {
