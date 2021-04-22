@@ -1,8 +1,8 @@
 {
   "name": "xcloud-desktop",
-  "productName": "xcloud-desktop",
-  "version": "1.0.0",
-  "description": "My Electron application description",
+  "productName": "XCloud Desktop",
+  "version": "1.0.1",
+  "description": "Desktop app for XCloud (Unoffical)",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -24,7 +24,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "xcloud_desktop"
+            "name": "XCloud Desktop"
           }
         },
         {
