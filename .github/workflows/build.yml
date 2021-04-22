@@ -32,9 +32,25 @@ jobs:
         run: yarn make
 
       - name: List Output Files
-        run: ls ./out/make/*/*/
+        if: success() && (matrix.os == 'windows-latest' || matrix.os == 'macos-latest)
+        run: ls ./out/make/*/*/*/
+        
+      - name: List Output Files
+        if: success() && matrix.os == 'ubuntu-latest'
+        run: ls ./out/make/*/*/*/
 
       - name: Upload builds to release
+        if: success() && (matrix.os == 'windows-latest' || matrix.os == 'macos-latest)
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ github.ref }}
+          files: out/make/*/*/*/*.*
+          draft: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload builds to release
+        if: success() && matrix.os == 'ubuntu-latest'
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ github.ref }}
@@ -43,9 +59,16 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Upload Atrifact
+      - name: Upload Artifacts
+        if: success() && (matrix.os == 'windows-latest' || matrix.os == 'macos-latest)
         uses: actions/upload-artifact@v2
-        if: success()
+        with:
+          name: XCloud Desktop-${{ github.sha }}
+          path: out/make/*/*/*/*.*
+
+      - name: Upload Artifacts
+        if: success() && matrix.os == 'ubuntu-latest'
+        uses: actions/upload-artifact@v2
         with:
           name: XCloud Desktop-${{ github.sha }}
           path: out/make/*/*/*.*
