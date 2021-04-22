@@ -48,7 +48,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ github.ref }}
-          files: out/make/*/*/*/*
+          files: out/make/*/*/*/
           draft: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -58,7 +58,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ github.ref }}
-          files: out/make/*/*/*
+          files: out/make/*/*/
           draft: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -68,11 +68,11 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: XCloud Desktop-${{ github.sha }}
-          path: out/make/*/*/*/*
+          path: out/make/*/*/*/
 
       - name: Upload Artifacts
         if: success() && matrix.os == 'ubuntu-latest'
         uses: actions/upload-artifact@v2
         with:
           name: XCloud Desktop-${{ github.sha }}
-          path: out/make/*/*/*
+          path: out/make/*/*/
