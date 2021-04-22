@@ -4,11 +4,6 @@ on:
   release:
     types:
       - published
-  push:
-    tags-ignore:
-      - '**'
-    branches:
-      - '**'
   workflow_dispatch:
 
 jobs:
