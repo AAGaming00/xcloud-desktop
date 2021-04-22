@@ -3,6 +3,7 @@
   "productName": "XCloud",
   "version": "1.0.6",
   "description": "Desktop app for XCloud (Unoffical)",
+  "repository": "https://github.com/AAGaming00/xcloud-desktop",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -60,7 +61,8 @@
     }
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "update-electron-app": "^2.0.1"
   },
   "devDependencies": {
     "@electron-forge/cli": "6.0.0-beta.53",
