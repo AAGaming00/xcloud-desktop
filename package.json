@@ -1,7 +1,7 @@
 {
   "name": "xcloud",
   "productName": "XCloud",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Desktop app for XCloud (Unoffical)",
   "main": "src/index.js",
   "scripts": {
@@ -43,6 +43,18 @@
         {
           "name": "@electron-forge/maker-rpm",
           "config": {}
+        }
+      ],
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "AAGaming00",
+              "name": "xcloud-desktop"
+            },
+            "prerelease": true
+          }
         }
       ]
     }
