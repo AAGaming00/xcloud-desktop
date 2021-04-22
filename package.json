@@ -1,6 +1,6 @@
 {
   "name": "xcloud-desktop",
-  "productName": "XCloud Desktop",
+  "productName": "XCloud",
   "version": "1.0.1",
   "description": "Desktop app for XCloud (Unoffical)",
   "main": "src/index.js",
@@ -20,13 +20,13 @@
   "config": {
     "forge": {
       "packagerConfig": {
-        "executableName": "xcloud-desktop"
+        "executableName": "xcloud"
       },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "XCloud Desktop"
+            "name": "XCloud"
           }
         },
         {
