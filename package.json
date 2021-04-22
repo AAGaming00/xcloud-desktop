@@ -1,7 +1,7 @@
 {
   "name": "xcloud",
   "productName": "XCloud",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Desktop app for XCloud (Unoffical)",
   "main": "src/index.js",
   "scripts": {
