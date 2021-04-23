@@ -1,14 +1,14 @@
 name: Build XCloud Desktop
 
 on:
-  # release:
-  #   types:
-  #     - published
-  push:
-    tags-ignore:
-      - '**'
-    branches:
-      - '**'
+  release:
+    types:
+      - published
+  # push:
+  #   tags-ignore:
+  #     - '**'
+  #   branches:
+  #     - '**'
   workflow_dispatch:
 
 jobs:
