@@ -168,6 +168,15 @@
     fs-extra "^9.0.1"
     which "^2.0.2"
 
+"@electron-forge/maker-base@^6.0.0-beta.54":
+  version "6.0.0-beta.54"
+  resolved "https://registry.yarnpkg.com/@electron-forge/maker-base/-/maker-base-6.0.0-beta.54.tgz#f5679d6c472d9c3ada4eb0b210ea28067f95f568"
+  integrity sha512-4y0y15ieb1EOR5mibtFM9tZzaShbAO0RZu6ARLCpD5BgKuJBzXRPfWvEmY6WeDNzoWTJ+mQdYikLAeOL2E9mew==
+  dependencies:
+    "@electron-forge/shared-types" "6.0.0-beta.54"
+    fs-extra "^9.0.1"
+    which "^2.0.2"
+
 "@electron-forge/maker-deb@6.0.0-beta.53":
   version "6.0.0-beta.53"
   resolved "https://registry.yarnpkg.com/@electron-forge/maker-deb/-/maker-deb-6.0.0-beta.53.tgz#264b75e4b1467c6aa8aa11ac4d23dbd27a10b017"
@@ -255,7 +264,7 @@
     electron-rebuild "^2.0.0"
     ora "^5.0.0"
 
-"@electron-forge/shared-types@6.0.0-beta.54":
+"@electron-forge/shared-types@6.0.0-beta.54", "@electron-forge/shared-types@^6.0.0-beta.54":
   version "6.0.0-beta.54"
   resolved "https://registry.yarnpkg.com/@electron-forge/shared-types/-/shared-types-6.0.0-beta.54.tgz#61ceb5e0754314035dc934e86eb21b29f893ac19"
   integrity sha512-6CzWKFR17rxxeIqm1w5ZyT9uTAHSVAjhqL8c+TmizF2703GyCEusUkjP2UXt/tZNY4MJlukZoJM66Bct6oZJ+w==
@@ -609,7 +618,7 @@ app-builder-bin@3.5.13:
   resolved "https://registry.yarnpkg.com/app-builder-bin/-/app-builder-bin-3.5.13.tgz#6dd7f4de34a4e408806f99b8c7d6ef1601305b7e"
   integrity sha512-ighVe9G+bT1ENGdp9ecO1P+94vv/f+FUwaI+XkNzeg9bYF8Oi3BQ+mJuxS00UgyHs8luuOzjzC+qnAtdb43Mpg==
 
-app-builder-lib@22.11.1:
+app-builder-lib@^22.10.5:
   version "22.11.1"
   resolved "https://registry.yarnpkg.com/app-builder-lib/-/app-builder-lib-22.11.1.tgz#a19c90f9bbe22309db53768434e744095ddf6c85"
   integrity sha512-oHpXomred4MeDzdLBMNuBtyEMiskX4wwQE+23CKFMqVfLEzpRwErZW+xegFi8aa/rhAOdED0THSHTcIr5rylIQ==
@@ -1314,12 +1323,13 @@ ejs@^3.1.6:
   dependencies:
     jake "^10.6.1"
 
-electron-forge-maker-appimage@^22.11.1:
-  version "22.11.1"
-  resolved "https://registry.yarnpkg.com/electron-forge-maker-appimage/-/electron-forge-maker-appimage-22.11.1.tgz#d6914268628f580fca13fb9827e119164d2e2540"
-  integrity sha512-isyXHyn9gU3z/PJLHkeZxFTdKa2bCY2cAzdSB1yvil48J5Fwf8CXAHMDbZlRZ42e+2D7X6BqyAz+P7X+9KJu8Q==
+electron-forge-maker-appimage@SpacingBat3/electron-forge-maker-appimage:
+  version "1.0.0"
+  resolved "https://codeload.github.com/SpacingBat3/electron-forge-maker-appimage/tar.gz/0eea1abf284b05b882f99080149086c499098074"
   dependencies:
-    app-builder-lib "22.11.1"
+    "@electron-forge/maker-base" "^6.0.0-beta.54"
+    "@electron-forge/shared-types" "^6.0.0-beta.54"
+    app-builder-lib "^22.10.5"
 
 electron-installer-common@^0.10.2:
   version "0.10.3"
