@@ -39,7 +39,15 @@
         },
         {
           "name": "electron-forge-maker-appimage",
-          "config": {}
+          "config": {
+            "options": {
+              "icon": "assets/logo.png",
+              "productName": "XCloud",
+              "genericName": "XCloud",
+              "categories": "Games",
+              "compression": "gzip"
+            }
+          }
         },
         {
           "name": "@electron-forge/maker-deb",
