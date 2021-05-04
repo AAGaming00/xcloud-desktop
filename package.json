@@ -1,7 +1,7 @@
 {
   "name": "xcloud",
   "productName": "XCloud",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Desktop app for XCloud (Unoffical)",
   "repository": "https://github.com/AAGaming00/xcloud-desktop",
   "main": "src/index.js",
