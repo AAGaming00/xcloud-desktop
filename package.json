@@ -21,7 +21,8 @@
   "config": {
     "forge": {
       "packagerConfig": {
-        "executableName": "xcloud"
+        "executableName": "xcloud",
+        "icon": "assets/logo.ico"
       },
       "makers": [
         {
