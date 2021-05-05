@@ -37,6 +37,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Build for M1
+        if: matrix.os == 'macos-latest'
+        run: yarn run publish --arch=arm64
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       # - name: List Output Files
       #   if: success() && (matrix.os == 'windows-latest' || matrix.os == 'macos-latest')
       #   run: ls ./out/make/*/*/*/
